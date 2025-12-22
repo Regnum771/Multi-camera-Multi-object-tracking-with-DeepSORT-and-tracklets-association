@@ -1,0 +1,6 @@
+/.venv
+/output.mp4
+/runs
+/yolov8n.pt
+/yolov8n_openvino_model
+/__pycache__
