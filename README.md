@@ -1,7 +1,7 @@
 # Multi-camera Human Tracking with DeepSORT & Tracklet association
 
 ## Description
-This project is my (Ngo Quoc Khanh)'s submission to Vietnam Academy of Science and Technology.
+This project is my (Ngo Quoc Khanh)'s submission to Vietnam Academy of Science and Technology, as a part of Master's Degree application.
 
 This project tracks human movement across two camera. It is a naive implementation of Multi-camera Multi-object Tracking problem using [this paper](www.sciencedirect.com/science/article/pii/S0925231223006811) as a reference.
 It detects humans using YOLOv8, tracks them within each camera using DeepSORT tracklets, and performs cross-camera re-identification (ReID) to maintain consistent global IDs.
