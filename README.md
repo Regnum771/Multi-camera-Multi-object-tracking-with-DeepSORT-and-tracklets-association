@@ -3,8 +3,8 @@
 ## **Description**
 
 This project tracks human movement across two camera. It is a naive implementation of Multi-camera Multi-object Tracking problem using [this paper](www.sciencedirect.com/science/article/pii/S0925231223006811) as a reference.
-
 It detects humans using YOLOv8, tracks them within each camera using DeepSORT tracklets, and performs cross-camera re-identification (ReID) to maintain consistent global IDs.
+
 ---
 
 ## **Installation**
@@ -77,7 +77,7 @@ cameras = [
 ]
 ```
 
-* Global ID parameters and confidence thresholds are configurable in param.py:
+* Global ID parameters and confidence thresholds are configurable in `param.py`:
 
 ```python
 similarity_threshold = 0.75
@@ -87,7 +87,7 @@ confidence_threshold = 0.6
 
 ### **Export Processed Data**
 
-* Specify your DB param in param.py
+* Specify your DB param in `param.py`
 * All processed frame data (bounding boxes, tracklets, global IDs, embeddings) can be exported to **MongoDB** after processing:
 
 ```python
