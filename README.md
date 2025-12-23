@@ -1,4 +1,4 @@
-###Multi-camera Human Tracking with DeepSORT & Tracklet association
+# Multi-camera Human Tracking with DeepSORT & Tracklet association
 
 ## **Description**
 
@@ -68,7 +68,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 ### **Configuration**
 
-* Video sources or webcams can be specified in `main.py`:
+Video sources or webcams can be specified in `main.py`:
 
 ```python
 cameras = [
@@ -77,7 +77,7 @@ cameras = [
 ]
 ```
 
-* Global ID parameters and confidence thresholds are configurable in `param.py`:
+Global ID parameters and confidence thresholds are configurable in `param.py`:
 
 ```python
 similarity_threshold = 0.75
@@ -87,8 +87,8 @@ confidence_threshold = 0.6
 
 ### **Export Processed Data**
 
-* Specify your DB param in `param.py`
-* All processed frame data (bounding boxes, tracklets, global IDs, embeddings) can be exported to **MongoDB** after processing:
+Specify your DB param in `param.py`
+All processed frame data (bounding boxes, tracklets, global IDs, embeddings) can be exported to **MongoDB** after processing:
 
 ```python
 from mongo_exporter import bulk_insert_frames
@@ -97,4 +97,9 @@ bulk_insert_frames(all_frames, mongo_uri="mongodb+srv://user:pass@cluster.mongod
 ```
 
 ---
+
+## Discussion
+
+The current project has yet to implement training and evaluation stage.
+
 
