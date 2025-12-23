@@ -17,3 +17,9 @@ frame_weight = 0.3
 confidence_threshold = 0.6         
 # EMA smoothing factor for per-tracklet embeddings
 tracklet_ema_alpha = 0.9
+
+"""data exporter parameters"""
+# insert your mongodb connection string here
+mongo_uri = ""
+db_name = "MCTMT"
+collection_name = "frames"
