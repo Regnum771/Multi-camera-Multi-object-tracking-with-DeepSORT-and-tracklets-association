@@ -1,8 +1,10 @@
-**Multi-camera Human Tracking with DeepSORT & Tracklet association**
+###Multi-camera Human Tracking with DeepSORT & Tracklet association
 
 ## **Description**
 
-This project implements a **multi-camera human detection and tracking system** with global identity assignment. It detects humans using YOLOv8, tracks them within each camera using DeepSORT tracklets, and performs **cross-camera re-identification (ReID)** to maintain consistent global IDs.
+This project tracks human movement across two camera. It is a naive implementation of Multi-camera Multi-object Tracking problem using [this paper](www.sciencedirect.com/science/article/pii/S0925231223006811) as a reference.
+
+It detects humans using YOLOv8, tracks them within each camera using DeepSORT tracklets, and performs cross-camera re-identification (ReID) to maintain consistent global IDs.
 ---
 
 ## **Installation**
@@ -64,15 +66,6 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 ## **Usage**
 
-### **Run on Multiple Cameras**
-
-```python
-from main import main
-
-if __name__ == "__main__":
-    main()
-```
-
 ### **Configuration**
 
 * Video sources or webcams can be specified in `main.py`:
@@ -94,6 +87,7 @@ confidence_threshold = 0.6
 
 ### **Export Processed Data**
 
+* Specify your DB param in param.py
 * All processed frame data (bounding boxes, tracklets, global IDs, embeddings) can be exported to **MongoDB** after processing:
 
 ```python
