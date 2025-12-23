@@ -18,8 +18,8 @@ def main():
 
     # Replace 0 and 1 with actual video sources if there's no webcam
     cameras = [
-        ("C:\\Users\\quock\\Downloads\\test.avi", "Camera 1"), 
-        ("C:\\Users\\quock\\Downloads\\test01.avi", "Camera 2"),
+        (0, "Camera 1"), 
+        (1, "Camera 2"),
     ]
 
     camera_workers = []
@@ -69,3 +69,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
